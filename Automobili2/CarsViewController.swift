@@ -47,14 +47,7 @@ class CarsViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
     
         override func viewDidLoad() {
         super.viewDidLoad()
-            
-        let zastava = Car(name: "Zastava", price: 150, age: 1971, model: "101", imageName: nil)
-           // cars.append(zastava)
-            cars.insert(zastava, at: 3)
-            cars.remove(at: 0)
-            
-            
-            
+  
             
         let flowelayout = UICollectionViewFlowLayout()
         collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: flowelayout)
