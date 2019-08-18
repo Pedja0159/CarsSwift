@@ -17,7 +17,7 @@
 		AC27C07F22D3FEB700D7F4EF /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27C07E22D3FEB700D7F4EF /* Car.swift */; };
 		AC27C08122D3FF0B00D7F4EF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27C08022D3FF0B00D7F4EF /* Extension.swift */; };
 		ACAF763622EF4B3D00F90D5B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF763522EF4B3D00F90D5B /* DetailViewController.swift */; };
-		ACFD2EE7230A111700FD1D38 /* AddCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD2EE6230A111700FD1D38 /* AddCarViewController.swift */; };
+		ACD2D36A230A148B00BEC248 /* AddCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD2D369230A148B00BEC248 /* AddCarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		AC27C07E22D3FEB700D7F4EF /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		AC27C08022D3FF0B00D7F4EF /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		ACAF763522EF4B3D00F90D5B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		ACFD2EE6230A111700FD1D38 /* AddCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCarViewController.swift; sourceTree = "<group>"; };
+		ACD2D369230A148B00BEC248 /* AddCarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,6 @@
 		AC27C04022D3D59600D7F4EF = {
 			isa = PBXGroup;
 			children = (
-				ACFD2EE6230A111700FD1D38 /* AddCarViewController.swift */,
 				AC27C04B22D3D59600D7F4EF /* Automobili2 */,
 				AC27C06022D3D59A00D7F4EF /* Automobili2Tests */,
 				AC27C06B22D3D59A00D7F4EF /* Automobili2UITests */,
@@ -107,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				AC27C04C22D3D59600D7F4EF /* AppDelegate.swift */,
+				ACD2D369230A148B00BEC248 /* AddCarViewController.swift */,
 				AC27C08022D3FF0B00D7F4EF /* Extension.swift */,
 				AC27C04E22D3D59600D7F4EF /* CarsViewController.swift */,
 				ACAF763522EF4B3D00F90D5B /* DetailViewController.swift */,
@@ -267,7 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACFD2EE7230A111700FD1D38 /* AddCarViewController.swift in Sources */,
+				ACD2D36A230A148B00BEC248 /* AddCarViewController.swift in Sources */,
 				AC069B0922D7823F00660F55 /* CarCollectionVIewCell.swift in Sources */,
 				AC27C08122D3FF0B00D7F4EF /* Extension.swift in Sources */,
 				AC27C07F22D3FEB700D7F4EF /* Car.swift in Sources */,
