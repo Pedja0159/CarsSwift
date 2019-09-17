@@ -10,10 +10,10 @@ import UIKit
 
 class Car {
     
-    let name: String?
+    var name: String?
     var price: Double?
     var age: Int?
-    let model: String?
+    var model: String?
     var image: UIImage?
     
     

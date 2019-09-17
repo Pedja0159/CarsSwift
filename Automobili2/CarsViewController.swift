@@ -61,14 +61,25 @@ class CarsViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
         
         collectionView.backgroundColor = UIColor.customLightBlueColor
         
-        navigationItem.title = "Car"
+            navigationController?.navigationBar.topItem?.title = "Car"
         navigationController?.navigationBar.barTintColor = UIColor.customRedColor
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white,
                                                                    NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 20)]
+            navigationController?.navigationBar.tintColor = .white
         
         collectionView.register(CarCollectionViewCell.self, forCellWithReuseIdentifier: cellld)
-       
+            
+            self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action:  #selector(self.action(sender:)))
+
         }
+    
+    @objc func action(sender: UIBarButtonItem) {
+        let addCarViewController = AddCarViewController()
+        self.navigationController?.present(addCarViewController, animated: true, completion: nil)
+        
+        
+        
+    }
     
     func collectionView(_ _collectionView:UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cars.count
