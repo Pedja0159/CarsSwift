@@ -12,7 +12,24 @@ class AddCarViewController: UIViewController {
     
     var newCar: Car?
     
-    
+    func upadateButtonState () {
+        
+        var enableButton = false
+        
+        if (newCar?.name != nil && newCar?.name! != "") && newCar?.price != nil && (newCar?.model != nil && newCar?.model! != "") && newCar?.age != nil {
+            enableButton = true
+        }
+        
+        if enableButton == true {
+            saveButton.isEnabled = true
+            saveButton.alpha = 1
+        }else {
+            saveButton.isEnabled = false
+            saveButton.alpha = 0.5
+            
+        }
+        
+    }
     
     lazy var profileImageView: UIImageView = {
         
@@ -98,21 +115,30 @@ class AddCarViewController: UIViewController {
             newCar?.name = textField.text
         case modelTextField:
             newCar?.model = textField.text
-//        case priceTextField:
-//            newCar?.price = textField.text
-//        case ageTextField:
-//            newCar?.age = textField.text
+            
+        case priceTextField:
+            if let _validText = textField.text, let _price = Double(_validText) {
+                newCar?.price = _price
+            } else {
+                newCar?.price = nil
+            }
+        case ageTextField:
+            if let _validText = textField.text, let _age = Int(_validText) {
+                newCar?.age = _age
+            } else {
+                newCar?.age = nil
+            }
         default:
             break
         }
         
-        
+        upadateButtonState()
     }
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        upadateButtonState ()
         newCar = Car (name: nil, price: nil, age: nil, model: nil, imageName: nil)
         
         self.view.backgroundColor = .orange

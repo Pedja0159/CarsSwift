@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Automobili2/CarsViewController.swift"
-            timestampString = "590419577.07337"
+            timestampString = "590423410.736043"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "65"
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Automobili2/CarsViewController.swift"
-            timestampString = "590419577.073525"
+            timestampString = "590423410.736179"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "77"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Automobili2/CarsViewController.swift"
-            timestampString = "590419577.073591"
+            timestampString = "590423410.736251"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "76"
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Automobili2/AddCarViewController.swift"
-            timestampString = "590419577.073655"
+            timestampString = "590423410.7363141"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
             landmarkName = "action(sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,12 +106,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Automobili2/AddCarViewController.swift"
-            timestampString = "590419577.074078"
+            timestampString = "590423410.7367851"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
-            landmarkName = "textFieldDidChange(_:)"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "upadateButtonState()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -122,12 +122,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Automobili2/AddCarViewController.swift"
-            timestampString = "590419577.074333"
+            timestampString = "590423410.737066"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "117"
             endingLineNumber = "117"
-            landmarkName = "viewDidLoad()"
+            landmarkName = "textFieldDidChange(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
