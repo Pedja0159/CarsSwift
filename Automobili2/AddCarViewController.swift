@@ -106,6 +106,15 @@ class AddCarViewController: UIViewController {
         
     }()
     
+    lazy var addImageButton: UIButton = {
+        
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action:#selector(self.didTapClose(sender:)), for: .touchUpInside)
+        return button
+        
+    }()
+    
     lazy var closeButton: UIButton = {
         
         let button = UIButton()
@@ -190,6 +199,14 @@ class AddCarViewController: UIViewController {
         let widthcloseButtonAnchor = closeButton.widthAnchor.constraint(equalToConstant: 100)
         NSLayoutConstraint.activate([topcloseButtonAnchor,rightcloawButtonAnchor,heightcloseButtonAnchor,widthcloseButtonAnchor])
         
+        
+       
+        let heightaddImageButtonAnchor = addImageButton.heightAnchor.constraint(equalToConstant: 20)
+        let widthaddImageButtonAnchor = addImageButton.widthAnchor.constraint(equalToConstant: 100)
+        NSLayoutConstraint.activate([heightaddImageButtonAnchor,widthaddImageButtonAnchor])
+        
+        mainStackView.addArrangedSubview(addImageButton)
+        
 //        let nameFieldHeight = nameTextField.heightAnchor.constraint(equalToConstant: 31)
         let nameFieldWidth = nameTextField.widthAnchor.constraint(equalToConstant: 300)
         nameTextField.placeholder = "Name:"
@@ -226,6 +243,11 @@ class AddCarViewController: UIViewController {
         let closeButtonWidth = closeButton.widthAnchor.constraint(equalToConstant: 300)
         closeButton.setTitle("Close", for: .normal)
         NSLayoutConstraint.activate([closeButtonWidth])
+        
+        let addImageButtonWidth = addImageButton.widthAnchor.constraint(equalToConstant: 300)
+        addImageButton.setTitle("add", for: .normal)
+        NSLayoutConstraint.activate([addImageButtonWidth])
+        
     }
     
     @objc func didTapSave(sender: UIBarButtonItem) {
