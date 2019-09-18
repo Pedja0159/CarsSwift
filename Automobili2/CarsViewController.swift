@@ -8,7 +8,13 @@
 
 import UIKit
 
-class CarsViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UICollectionViewDelegate{
+class CarsViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UICollectionViewDelegate, AddCarDelegate {
+    
+    func didAddCar(car: Car) {
+        cars.append(car)
+        collectionView.reloadData()
+    }
+    
 
     let cellld = "cellld"
     var collectionView: UICollectionView!
@@ -75,6 +81,7 @@ class CarsViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
     
     @objc func action(sender: UIBarButtonItem) {
         let addCarViewController = AddCarViewController()
+        addCarViewController.addCarDelegate = self
         self.navigationController?.present(addCarViewController, animated: true, completion: nil)
         
         

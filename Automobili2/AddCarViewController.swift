@@ -8,9 +8,21 @@
 
 import UIKit
 
+
+protocol AddCarDelegate: class {
+    
+    func didAddCar(car:Car)
+    
+    
+    
+    
+}
+
 class AddCarViewController: UIViewController {
     
     var newCar: Car?
+    
+    weak var addCarDelegate: AddCarDelegate?
     
     func upadateButtonState () {
         
@@ -89,7 +101,16 @@ class AddCarViewController: UIViewController {
         
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action:#selector(self.action(sender:)), for: .touchUpInside)
+        button.addTarget(self, action:#selector(self.didTapSave(sender:)), for: .touchUpInside)
+        return button
+        
+    }()
+    
+    lazy var closeButton: UIButton = {
+        
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action:#selector(self.didTapClose(sender:)), for: .touchUpInside)
         return button
         
     }()
@@ -143,6 +164,11 @@ class AddCarViewController: UIViewController {
         
         self.view.backgroundColor = .orange
         
+       
+
+        
+        
+        
         view.addSubview(mainStackView)
         
         let topMainStacViewAnchor = mainStackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 50)
@@ -154,6 +180,15 @@ class AddCarViewController: UIViewController {
         let widthprofileImageViewAnchor = profileImageView.widthAnchor.constraint(equalToConstant: 100)
         NSLayoutConstraint.activate([heightprofileImageViewAnchor,widthprofileImageViewAnchor])
         mainStackView.addArrangedSubview(profileImageView)
+        
+        
+        view.addSubview(closeButton)
+        
+        let topcloseButtonAnchor = closeButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 30)
+        let rightcloawButtonAnchor = closeButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0)
+        let heightcloseButtonAnchor = closeButton.heightAnchor.constraint(equalToConstant: 30)
+        let widthcloseButtonAnchor = closeButton.widthAnchor.constraint(equalToConstant: 100)
+        NSLayoutConstraint.activate([topcloseButtonAnchor,rightcloawButtonAnchor,heightcloseButtonAnchor,widthcloseButtonAnchor])
         
 //        let nameFieldHeight = nameTextField.heightAnchor.constraint(equalToConstant: 31)
         let nameFieldWidth = nameTextField.widthAnchor.constraint(equalToConstant: 300)
@@ -185,9 +220,26 @@ class AddCarViewController: UIViewController {
         saveButton.backgroundColor = .black
         NSLayoutConstraint.activate([saveButtonWidth])
         mainStackView.addArrangedSubview(saveButton)
+        
+        
+        
+        let closeButtonWidth = closeButton.widthAnchor.constraint(equalToConstant: 300)
+        closeButton.setTitle("Close", for: .normal)
+        NSLayoutConstraint.activate([closeButtonWidth])
     }
     
-    @objc func action(sender: UIBarButtonItem) {
+    @objc func didTapSave(sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
+        if let _newCar = newCar {
+            addCarDelegate?.didAddCar(car: _newCar )
+        }
+        
     }
+
+    @objc func didTapClose(sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    
+
+        }
+    
 }
