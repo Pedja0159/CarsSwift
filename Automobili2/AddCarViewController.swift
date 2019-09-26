@@ -22,6 +22,8 @@ class AddCarViewController: UIViewController {
     
     var newCar: Car?
     
+    let profileImageViewWidth: CGFloat = 100
+    
     weak var addCarDelegate: AddCarDelegate?
     
     func upadateButtonState () {
@@ -43,15 +45,28 @@ class AddCarViewController: UIViewController {
         
     }
     
+    
+    
     lazy var profileImageView: UIImageView = {
         
-        let imageView = UIImageView(image: nil)
-        imageView.translatesAutoresizingMaskIntoConstraints = false
+        let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         imageView.backgroundColor = .red
+        imageView.layer.cornerRadius = profileImageViewWidth / 2
+        imageView.layer.masksToBounds = true
         return imageView
         
     }()
+
+    
+    
+    @objc fileprivate func profileImageButtonTapped() {
+        print("Tapped profile image button")
+        
+        showImagePickerController()
+    }
+    
+    
     
     lazy var nameTextField: UITextField = {
         
@@ -83,7 +98,7 @@ class AddCarViewController: UIViewController {
         textField.borderStyle = .roundedRect
         textField.addTarget(self, action: #selector(AddCarViewController.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
         return textField
-      
+        
     }()
     
     lazy var priceTextField: UITextField = {
@@ -108,9 +123,13 @@ class AddCarViewController: UIViewController {
     
     lazy var addImageButton: UIButton = {
         
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action:#selector(self.didTapClose(sender:)), for: .touchUpInside)
+        let button = UIButton(type: .system)
+        button.contentMode = .scaleAspectFit
+        button.layer.cornerRadius = profileImageViewWidth / 2
+        button.layer.masksToBounds = true
+        button.addTarget(self, action: #selector(profileImageButtonTapped), for: .touchUpInside)
+        button.backgroundColor = .clear
+        
         return button
         
     }()
@@ -164,7 +183,7 @@ class AddCarViewController: UIViewController {
         
         upadateButtonState()
     }
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -173,12 +192,17 @@ class AddCarViewController: UIViewController {
         
         self.view.backgroundColor = .orange
         
-       
-
         
         
+        
+        
+        view.addSubview(profileImageView)
+        view.addSubview(addImageButton)
         
         view.addSubview(mainStackView)
+        
+        
+        
         
         let topMainStacViewAnchor = mainStackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 50)
         let leftMainStacViewAnchor = mainStackView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0)
@@ -200,20 +224,20 @@ class AddCarViewController: UIViewController {
         NSLayoutConstraint.activate([topcloseButtonAnchor,rightcloawButtonAnchor,heightcloseButtonAnchor,widthcloseButtonAnchor])
         
         
-       
+        
         let heightaddImageButtonAnchor = addImageButton.heightAnchor.constraint(equalToConstant: 20)
         let widthaddImageButtonAnchor = addImageButton.widthAnchor.constraint(equalToConstant: 100)
         NSLayoutConstraint.activate([heightaddImageButtonAnchor,widthaddImageButtonAnchor])
         
         mainStackView.addArrangedSubview(addImageButton)
         
-//        let nameFieldHeight = nameTextField.heightAnchor.constraint(equalToConstant: 31)
+        //        let nameFieldHeight = nameTextField.heightAnchor.constraint(equalToConstant: 31)
         let nameFieldWidth = nameTextField.widthAnchor.constraint(equalToConstant: 300)
         nameTextField.placeholder = "Name:"
         NSLayoutConstraint.activate([nameFieldWidth])
         mainStackView.addArrangedSubview(nameTextField)
         
-    
+        
         let modelFieldWidth = modelTextField.widthAnchor.constraint(equalToConstant: 300)
         modelTextField.placeholder = "Model:"
         NSLayoutConstraint.activate([modelFieldWidth])
@@ -248,6 +272,7 @@ class AddCarViewController: UIViewController {
         addImageButton.setTitle("add", for: .normal)
         NSLayoutConstraint.activate([addImageButtonWidth])
         
+        
     }
     
     @objc func didTapSave(sender: UIBarButtonItem) {
@@ -257,11 +282,43 @@ class AddCarViewController: UIViewController {
         }
         
     }
-
+    
     @objc func didTapClose(sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
+        
+        
+    }
     
-
-        }
     
 }
+
+extension AddCarViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func showImagePickerController() {
+        let imagePickerViewController = UIImagePickerController()
+        imagePickerViewController.delegate = self
+        imagePickerViewController.allowsEditing = true
+        imagePickerViewController.sourceType = .photoLibrary
+        present(imagePickerViewController,animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let editedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage
+            
+        {
+            profileImageView.image = editedImage
+            
+        } else if let originalImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+            
+        {
+            
+            profileImageView.image = originalImage
+            
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
+}
+
