@@ -51,19 +51,21 @@ class AddCarViewController: UIViewController {
         
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
-        imageView.backgroundColor = .red
+        imageView.backgroundColor = .white
+        imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.layer.cornerRadius = profileImageViewWidth / 2
         imageView.layer.masksToBounds = true
+        
         return imageView
         
     }()
-
+    
     
     
     @objc fileprivate func profileImageButtonTapped() {
         print("Tapped profile image button")
         
-        showImagePickerController()
+        showImagePickerControllerActionSheet()
     }
     
     
@@ -294,31 +296,47 @@ class AddCarViewController: UIViewController {
 
 extension AddCarViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    func showImagePickerController() {
-        let imagePickerViewController = UIImagePickerController()
-        imagePickerViewController.delegate = self
-        imagePickerViewController.allowsEditing = true
-        imagePickerViewController.sourceType = .photoLibrary
-        present(imagePickerViewController,animated: true, completion: nil)
+    func showImagePickerControllerActionSheet() {
+        
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        
+        let actionSheet = UIAlertController(title: "Photo source", message: "Choose a Source ", preferredStyle: .actionSheet)
+        
+        actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action:UIAlertAction) in
+            
+            if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                imagePickerController.sourceType = .camera
+                 self.present(imagePickerController,animated: true, completion: nil)
+            }else {
+                print("Camera not availabel")
+            }
+            
+           
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (action:UIAlertAction) in
+            imagePickerController.sourceType = .photoLibrary
+            self.present(imagePickerController,animated: true, completion: nil)
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Cancle", style: .cancel, handler: nil))
+        
+        self.present(actionSheet,animated: true, completion: nil)
+        
+        
     }
-    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-        if let editedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage
-            
-        {
-            profileImageView.image = editedImage
-            
-        } else if let originalImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
-            
-        {
-            
-            profileImageView.image = originalImage
-            
-        }
+        let editingImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        profileImageView.image = editingImage
+        picker.dismiss(animated: true, completion: nil)
         
-        dismiss(animated: true, completion: nil)
+
     }
     
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+
+   
 }
 
