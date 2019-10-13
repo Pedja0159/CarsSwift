@@ -227,41 +227,46 @@ class AddCarViewController: UIViewController {
         
         
         
-        let heightaddImageButtonAnchor = addImageButton.heightAnchor.constraint(equalToConstant: 20)
-        let widthaddImageButtonAnchor = addImageButton.widthAnchor.constraint(equalToConstant: 100)
-        NSLayoutConstraint.activate([heightaddImageButtonAnchor,widthaddImageButtonAnchor])
+        let addImageButtonAnchorHaight = addImageButton.heightAnchor.constraint(equalToConstant: 20)
+        let addImageButtonAnchorWidth = addImageButton.widthAnchor.constraint(equalToConstant: 100)
+        NSLayoutConstraint.activate([addImageButtonAnchorHaight,addImageButtonAnchorWidth])
         
         mainStackView.addArrangedSubview(addImageButton)
         
         //        let nameFieldHeight = nameTextField.heightAnchor.constraint(equalToConstant: 31)
         let nameFieldWidth = nameTextField.widthAnchor.constraint(equalToConstant: 300)
+        let nameFieldHeight = nameTextField.heightAnchor.constraint(equalToConstant: 38)
         nameTextField.placeholder = "Name:"
-        NSLayoutConstraint.activate([nameFieldWidth])
+        NSLayoutConstraint.activate([nameFieldWidth,nameFieldHeight])
         mainStackView.addArrangedSubview(nameTextField)
         
         
+        let modelFieldHeight = modelTextField.heightAnchor.constraint(equalToConstant: 38)
         let modelFieldWidth = modelTextField.widthAnchor.constraint(equalToConstant: 300)
         modelTextField.placeholder = "Model:"
-        NSLayoutConstraint.activate([modelFieldWidth])
+        NSLayoutConstraint.activate([modelFieldHeight,modelFieldWidth])
         mainStackView.addArrangedSubview(modelTextField)
         
         
         let priceFieldWidth = priceTextField.widthAnchor.constraint(equalToConstant: 300)
+        let priceFieldHeight = priceTextField.heightAnchor.constraint(equalToConstant: 38)
         priceTextField.placeholder = "Price:"
-        NSLayoutConstraint.activate([priceFieldWidth])
+        NSLayoutConstraint.activate([priceFieldWidth,priceFieldHeight])
         mainStackView.addArrangedSubview(priceTextField)
         
         
         let ageFieldWidth = ageTextField.widthAnchor.constraint(equalToConstant: 300)
+        let ageFieldHeight = ageTextField.heightAnchor.constraint(equalToConstant: 38)
         ageTextField.placeholder = "Age:"
-        NSLayoutConstraint.activate([ageFieldWidth])
+        NSLayoutConstraint.activate([ageFieldWidth,ageFieldHeight])
         mainStackView.addArrangedSubview(ageTextField)
         
         
         let saveButtonWidth = saveButton.widthAnchor.constraint(equalToConstant: 300)
+        let saveButtondHeight = saveButton.heightAnchor.constraint(equalToConstant: 40)
         saveButton.setTitle("Save", for: .normal)
         saveButton.backgroundColor = .black
-        NSLayoutConstraint.activate([saveButtonWidth])
+        NSLayoutConstraint.activate([saveButtonWidth,saveButtondHeight])
         mainStackView.addArrangedSubview(saveButton)
         
         
