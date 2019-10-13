@@ -333,6 +333,7 @@ extension AddCarViewController: UIImagePickerControllerDelegate, UINavigationCon
         
         let editingImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         profileImageView.image = editingImage
+        newCar?.image = editingImage
         picker.dismiss(animated: true, completion: nil)
         
 
