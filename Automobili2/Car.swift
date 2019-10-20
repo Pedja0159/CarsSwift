@@ -15,7 +15,7 @@ class Car {
     var age: Int?
     var model: String?
     var image: UIImage?
-    
+
     
     init(name:String?, price:Double?, age:Int?, model:String?, imageName:String?) {
             self.name = name

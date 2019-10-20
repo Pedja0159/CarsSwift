@@ -22,65 +22,140 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Automobili2/CarsViewController.swift"
-            timestampString = "592685787.403018"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Automobili2/CarsViewController.swift"
-            timestampString = "592685787.404542"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "action(sender:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Automobili2/CarsViewController.swift"
-            timestampString = "592685787.4046201"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
-            landmarkName = "action(sender:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Automobili2/AddCarViewController.swift"
-            timestampString = "592701420.079421"
+            timestampString = "593236720.963769"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "334"
-            endingLineNumber = "334"
-            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
+            startingLineNumber = "331"
+            endingLineNumber = "331"
+            landmarkName = "showImagePickerControllerActionSheet()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Automobili2/AddCarViewController.swift"
+            timestampString = "593236720.963992"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "saveButton"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Automobili2.AddCarViewController.addImageButton.getter : __C.UIButton"
+                  moduleName = "Automobili2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pejo/Desktop/CarsSwift/Automobili2/AddCarViewController.swift"
+                  timestampString = "593213264.947464"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "206">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.UIButton in Automobili2.AddCarViewController.addImageButton.getter : __C.UIButton"
+                  moduleName = "Automobili2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pejo/Desktop/CarsSwift/Automobili2/AddCarViewController.swift"
+                  timestampString = "593213264.9505841"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Automobili2.AddCarViewController.addImageButton.setter : __C.UIButton"
+                  moduleName = "Automobili2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pejo/Desktop/CarsSwift/Automobili2/AddCarViewController.swift"
+                  timestampString = "593213264.95289"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Automobili2.AddCarViewController.addImageButton.modify : __C.UIButton"
+                  moduleName = "Automobili2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pejo/Desktop/CarsSwift/Automobili2/AddCarViewController.swift"
+                  timestampString = "593213264.9552881"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Automobili2.AddCarViewController.addImageButton.modify : __C.UIButton with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Automobili2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pejo/Desktop/CarsSwift/Automobili2/AddCarViewController.swift"
+                  timestampString = "593213264.9573261"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Automobili2.AddCarViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Automobili2.AddCarViewController"
+                  moduleName = "Automobili2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pejo/Desktop/CarsSwift/Automobili2/AddCarViewController.swift"
+                  timestampString = "593213264.959484"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "980">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Automobili2.AddCarViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Automobili2.AddCarViewController&gt;"
+                  moduleName = "Automobili2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pejo/Desktop/CarsSwift/Automobili2/AddCarViewController.swift"
+                  timestampString = "593213264.963045"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "894">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
