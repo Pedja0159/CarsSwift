@@ -8,7 +8,11 @@
 
 import UIKit
 
-class Car {
+class Car:Equatable {
+    static func == (lhs: Car, rhs: Car) -> Bool {
+        return lhs.model == rhs.model && lhs.name == rhs.name
+    }
+    
     
     var name: String?
     var price: Double?

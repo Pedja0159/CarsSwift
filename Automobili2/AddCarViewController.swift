@@ -9,10 +9,11 @@
 import UIKit
 
 
-protocol AddCarDelegate: class {
+protocol ManageCarsDelegate: class {
     
     func didAddCar(car:Car)
     
+    func didRemoveCar(car:Car)
     
     
     
@@ -24,7 +25,7 @@ class AddCarViewController: UIViewController {
     
     let profileImageViewWidth: CGFloat = 100
     
-    weak var addCarDelegate: AddCarDelegate?
+    weak var manageCarsDelegate: ManageCarsDelegate?
     
     func upadateButtonState () {
         
@@ -285,7 +286,7 @@ class AddCarViewController: UIViewController {
     @objc func didTapSave(sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
         if let _newCar = newCar {
-            addCarDelegate?.didAddCar(car: _newCar )
+            manageCarsDelegate?.didAddCar(car: _newCar )
         }
         
     }
@@ -312,12 +313,12 @@ extension AddCarViewController: UIImagePickerControllerDelegate, UINavigationCon
             
             if UIImagePickerController.isSourceTypeAvailable(.camera) {
                 imagePickerController.sourceType = .camera
-                 self.present(imagePickerController,animated: true, completion: nil)
+                self.present(imagePickerController,animated: true, completion: nil)
             }else {
                 print("Camera not availabel")
             }
             
-           
+            
         }))
         actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (action:UIAlertAction) in
             imagePickerController.sourceType = .photoLibrary
@@ -336,13 +337,13 @@ extension AddCarViewController: UIImagePickerControllerDelegate, UINavigationCon
         newCar?.image = editingImage
         picker.dismiss(animated: true, completion: nil)
         
-
+        
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }
-
-   
+    
+    
 }
 

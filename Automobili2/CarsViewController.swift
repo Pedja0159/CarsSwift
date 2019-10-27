@@ -8,14 +8,30 @@
 
 import UIKit
 
-class CarsViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UICollectionViewDelegate, AddCarDelegate {
+class CarsViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UICollectionViewDelegate, ManageCarsDelegate {
+    
+    func didRemoveCar(car: Car) {
+        
+        
+        if let index = cars.firstIndex(of: car) {
+            cars.remove(at: index)
+            let indexPath = IndexPath(item: index, section: 0)
+            collectionView.deleteItems(at: [indexPath])
+            
+        }
+        
+        
+    }
+    
+    
+    
     
     func didAddCar(car: Car) {
         cars.append(car)
         collectionView.reloadData()
     }
     
-
+    
     let cellld = "cellld"
     var collectionView: UICollectionView!
     var cars = [Car(name: "Ferrari T8", price: 20.30, age: 1999, model:"Alpina", imageName: "Ferrari T8"),
@@ -37,7 +53,7 @@ class CarsViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
                 Car(name: "Rolls Royce", price: 20.30, age: 1999, model:"Alpina", imageName: "Rolls Royce"),
                 Car(name: "Volkswagen Golf", price: 20.30, age: 1999, model:"Alpina", imageName: "Volkswagen Golf")
     ]
-   
+    
     func layoutCollectionView() {
         
         view.addSubview(collectionView)
@@ -49,17 +65,17 @@ class CarsViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
         let bottom = collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0)
         NSLayoutConstraint.activate([trailing,leading,top,bottom])
         
-            }
+    }
     
-        override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
-  
-            
+        
+        
         let flowelayout = UICollectionViewFlowLayout()
         collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: flowelayout)
         
         layoutCollectionView()
-
+        
         
         collectionView.delegate = self
         collectionView.dataSource = self 
@@ -67,56 +83,58 @@ class CarsViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
         
         collectionView.backgroundColor = UIColor.customLightBlueColor
         
-            navigationController?.navigationBar.topItem?.title = "Car"
+        navigationController?.navigationBar.topItem?.title = "Car"
         navigationController?.navigationBar.barTintColor = UIColor.customRedColor
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white,
                                                                    NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 20)]
-            navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.tintColor = .white
         
         collectionView.register(CarCollectionViewCell.self, forCellWithReuseIdentifier: cellld)
-            
-            self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action:  #selector(self.action(sender:)))
-
-        }
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action:  #selector(self.action(sender:)))
+        
+    }
     
     @objc func action(sender: UIBarButtonItem) {
         let addCarViewController = AddCarViewController()
-        addCarViewController.addCarDelegate = self
+        addCarViewController.manageCarsDelegate = self
         self.navigationController?.present(addCarViewController, animated: true, completion: nil)
         
         
         
     }
     
+    
+    
     func collectionView(_ _collectionView:UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cars.count
-        }
+    }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellld, for: indexPath) as! CarCollectionViewCell
         cell.car = cars[indexPath.item]
-        
-            return cell
-        }
-
+        cell.manageCarsDelegate = self
+        return cell
+    }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let detailViewController = DetailViewController()
         detailViewController.car = cars[indexPath.row]
         self.navigationController?.pushViewController(detailViewController, animated: true)
         
-        }
-
+    }
+    
     
     func collectionView(_ collectionView:UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt
         indexPath: IndexPath) -> CGSize {
         return CGSize(width: (view.frame.width / 2) - 16, height: 100)
         
-        }
+    }
     
     func collectionView(_ collectionView: UICollectionView,layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt
         section: Int) -> UIEdgeInsets {
         return  UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
         
-        }
-
     }
+    
+}

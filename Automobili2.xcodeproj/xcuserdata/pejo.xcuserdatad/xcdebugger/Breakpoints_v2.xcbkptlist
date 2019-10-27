@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
+   uuid = "EBF02320-9392-4BAF-9487-938BB263E092"
    type = "1"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "C7877F6D-722C-4EF8-BF83-7F2F8B588DD4"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -22,35 +24,38 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "6772C022-610C-4A94-881B-E25DBC99BDCC"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Automobili2/AddCarViewController.swift"
-            timestampString = "593236720.963769"
+            timestampString = "593244107.3417031"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "331"
-            endingLineNumber = "331"
-            landmarkName = "showImagePickerControllerActionSheet()"
+            startingLineNumber = "334"
+            endingLineNumber = "334"
+            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "43A6889D-7485-40EB-8444-E458C8E015A1"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Automobili2/AddCarViewController.swift"
-            timestampString = "593236720.963992"
+            timestampString = "593244107.365047"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "saveButton"
             landmarkType = "24">
             <Locations>
                <Location
+                  uuid = "43A6889D-7485-40EB-8444-E458C8E015A1 - 37f1840554503a15"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -66,6 +71,7 @@
                   offsetFromSymbolStart = "206">
                </Location>
                <Location
+                  uuid = "43A6889D-7485-40EB-8444-E458C8E015A1 - 78bcdc74589602e"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -81,6 +87,7 @@
                   offsetFromSymbolStart = "26">
                </Location>
                <Location
+                  uuid = "43A6889D-7485-40EB-8444-E458C8E015A1 - 5ba68dd5c25b2989"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -96,6 +103,7 @@
                   offsetFromSymbolStart = "128">
                </Location>
                <Location
+                  uuid = "43A6889D-7485-40EB-8444-E458C8E015A1 - 4da90c8898bf57b8"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -111,6 +119,7 @@
                   offsetFromSymbolStart = "26">
                </Location>
                <Location
+                  uuid = "43A6889D-7485-40EB-8444-E458C8E015A1 - 397a1ef71bb13f0"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -126,6 +135,7 @@
                   offsetFromSymbolStart = "27">
                </Location>
                <Location
+                  uuid = "43A6889D-7485-40EB-8444-E458C8E015A1 - 9ac02553a71b6b8f"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -141,6 +151,7 @@
                   offsetFromSymbolStart = "980">
                </Location>
                <Location
+                  uuid = "43A6889D-7485-40EB-8444-E458C8E015A1 - a180489fba5b3369"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -156,6 +167,193 @@
                   offsetFromSymbolStart = "894">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "77B16D00-7B46-45F6-9F90-D41A99732440"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Automobili2/AddCarViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "294"
+            endingLineNumber = "294"
+            landmarkName = "didTapClose(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E66422FF-8653-4F63-AE7C-32FB5B10564B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Automobili2/AddCarViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "addImageButton"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "E66422FF-8653-4F63-AE7C-32FB5B10564B - 37f1840554503a15"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Automobili2.AddCarViewController.addImageButton.getter : __C.UIButton"
+                  moduleName = "Automobili2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pejo/Desktop/CarsSwift/Automobili2/AddCarViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "374">
+               </Location>
+               <Location
+                  uuid = "E66422FF-8653-4F63-AE7C-32FB5B10564B - 78bcdc74589602e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.UIButton in Automobili2.AddCarViewController.addImageButton.getter : __C.UIButton"
+                  moduleName = "Automobili2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pejo/Desktop/CarsSwift/Automobili2/AddCarViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
+                  offsetFromSymbolStart = "30">
+               </Location>
+               <Location
+                  uuid = "E66422FF-8653-4F63-AE7C-32FB5B10564B - 5ba68dd5c25b2989"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Automobili2.AddCarViewController.addImageButton.setter : __C.UIButton"
+                  moduleName = "Automobili2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pejo/Desktop/CarsSwift/Automobili2/AddCarViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "E66422FF-8653-4F63-AE7C-32FB5B10564B - 4da90c8898bf57b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Automobili2.AddCarViewController.addImageButton.modify : __C.UIButton"
+                  moduleName = "Automobili2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pejo/Desktop/CarsSwift/Automobili2/AddCarViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "E66422FF-8653-4F63-AE7C-32FB5B10564B - 397a1ef71bb13f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Automobili2.AddCarViewController.addImageButton.modify : __C.UIButton with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Automobili2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pejo/Desktop/CarsSwift/Automobili2/AddCarViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  uuid = "E66422FF-8653-4F63-AE7C-32FB5B10564B - 9ac02553a71b6b8f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Automobili2.AddCarViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Automobili2.AddCarViewController"
+                  moduleName = "Automobili2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pejo/Desktop/CarsSwift/Automobili2/AddCarViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "909">
+               </Location>
+               <Location
+                  uuid = "E66422FF-8653-4F63-AE7C-32FB5B10564B - a180489fba5b3369"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Automobili2.AddCarViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Automobili2.AddCarViewController&gt;"
+                  moduleName = "Automobili2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pejo/Desktop/CarsSwift/Automobili2/AddCarViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "840">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2E28212-004B-45CC-AA1F-8E6F70DCE2BD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Automobili2/AddCarViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "307"
+            endingLineNumber = "307"
+            landmarkName = "showImagePickerControllerActionSheet()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F562B04F-E060-4391-8449-A381FEC373D1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Automobili2/AddCarViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "279"
+            endingLineNumber = "279"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6F61FB5F-F4CE-4E17-AE54-98F923384911"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Automobili2/CarsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "didRemoveCar(car:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
