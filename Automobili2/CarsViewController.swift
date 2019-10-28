@@ -13,12 +13,9 @@ class CarsViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
     func didRemoveCar(car: Car) {
         
         
-        if let index = cars.firstIndex(of: car) {
-            cars.remove(at: index)
-            let indexPath = IndexPath(item: index, section: 0)
-            collectionView.deleteItems(at: [indexPath])
-            
-        }
+        createAlert(title: "Do You Like Delete \(car.name ?? "this car")?", message: "Do you?", car: car)
+        
+        
         
         
     }
@@ -100,12 +97,40 @@ class CarsViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
         addCarViewController.manageCarsDelegate = self
         self.navigationController?.present(addCarViewController, animated: true, completion: nil)
         
-        
-        
     }
     
     
-    
+    func createAlert (title:String, message:String, car:Car)
+    {
+        
+        
+        let alert = UIAlertController(title: title , message: message, preferredStyle: .alert)
+        
+        
+        alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { (action) in
+            
+            self.deleteThis(car: car)
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancle", style: UIAlertAction.Style.default, handler: { (action) in
+            print("Cancle")
+        }))
+        DispatchQueue.main.async {
+            self.present(alert, animated: true, completion: nil)
+        }
+        
+    }
+    func deleteThis(car:Car)
+    {
+        if let index = cars.firstIndex(of: car) {
+            
+            cars.remove(at: index)
+            let indexPath = IndexPath(item: index, section: 0)
+            collectionView.deleteItems(at: [indexPath])
+            
+        }
+    }
     func collectionView(_ _collectionView:UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cars.count
     }

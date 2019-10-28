@@ -14,12 +14,12 @@ class CarCollectionViewCell: UICollectionViewCell {
     
     
     @objc fileprivate func deleteButtonTapped() {
+        
         if let _car = car {
             manageCarsDelegate?.didRemoveCar(car: _car)
-            
-            
+          
         }
-        
+       
     }
     
     
@@ -69,6 +69,7 @@ class CarCollectionViewCell: UICollectionViewCell {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     func setup() {
         self.backgroundColor = UIColor.customDarkBlueColor
         

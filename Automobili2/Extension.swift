@@ -22,7 +22,7 @@ extension UIView {
         self.layer.cornerRadius = 3
         
         }
-
+        
         func anchor(top: NSLayoutYAxisAnchor?, left: NSLayoutXAxisAnchor?,
                 bottom: NSLayoutYAxisAnchor?, right: NSLayoutXAxisAnchor?,
                 paddingTop: CGFloat, paddingLeft: CGFloat, paddingBottom: CGFloat,
