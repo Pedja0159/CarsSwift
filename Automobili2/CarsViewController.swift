@@ -8,7 +8,17 @@
 
 import UIKit
 
-class CarsViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UICollectionViewDelegate, ManageCarsDelegate {
+class CarsViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UICollectionViewDelegate, ManageCarsDelegate , UISearchResultsUpdating, UISearchControllerDelegate{
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let searchString = searchController.searchBar.text as NSString? else { return }
+        filterCars = cars.filter { (car) -> Bool in
+            guard let carName = car.name as NSString? else { return false }
+            return (carName.range(of: searchString as String, options: NSString.CompareOptions.caseInsensitive).location) != NSNotFound
+        }
+        collectionView.reloadData()
+        
+    }
+    
     
     func didRemoveCar(car: Car) {
         
@@ -23,14 +33,21 @@ class CarsViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
     
     
     
+    
     func didAddCar(car: Car) {
         cars.append(car)
         collectionView.reloadData()
     }
+    let search = UISearchController(searchResultsController: nil)
     
     
     let cellld = "cellld"
     var collectionView: UICollectionView!
+    
+    var isSearchActive = false
+    
+    var filterCars: [Car]!
+    
     var cars = [Car(name: "Ferrari T8", price: 20.30, age: 1999, model:"Alpina", imageName: "Ferrari T8"),
                 Car(name: "Aston Martin DB11", price: 20.30, age: 1999, model:"Alpina", imageName: "Aston Martin DB11"),
                 Car(name: "Cadillac Fleetwood", price: 20.30, age: 1999, model:"Alpina", imageName: "Cadillac Fleetwood"),
@@ -67,6 +84,13 @@ class CarsViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        filterCars = []
+        search.searchResultsUpdater = self
+        search.obscuresBackgroundDuringPresentation = false
+        search.searchBar.placeholder = "Type something here to search"
+        navigationItem.searchController = search
+        search.delegate = self
+        search.searchBar.delegate = self
         
         let flowelayout = UICollectionViewFlowLayout()
         collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: flowelayout)
@@ -98,6 +122,7 @@ class CarsViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
         self.navigationController?.present(addCarViewController, animated: true, completion: nil)
         
     }
+    
     
     
     func createAlert (title:String, message:String, car:Car)
@@ -132,12 +157,22 @@ class CarsViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
         }
     }
     func collectionView(_ _collectionView:UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cars.count
+//        if isSearchActive {
+//           return filterCars.count
+//        }
+//
+//        return cars.count
+        let count = isSearchActive ? filterCars.count : cars.count
+        return count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellld, for: indexPath) as! CarCollectionViewCell
-        cell.car = cars[indexPath.item]
+        if isSearchActive {
+            cell.car = filterCars[indexPath.item]
+        } else {
+            cell.car = cars[indexPath.item]
+        }
         cell.manageCarsDelegate = self
         return cell
     }
@@ -162,4 +197,22 @@ class CarsViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
         
     }
     
+}
+extension CarsViewController: UISearchBarDelegate {
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        //        search(shouldShow: false)
+    }
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        isSearchActive = true
+        collectionView.reloadData()
+        
+    }
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        isSearchActive = false
+         collectionView.reloadData()
+    }
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+    }
 }
