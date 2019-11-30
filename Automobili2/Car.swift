@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Car:Equatable {
+class Car:NSObject {
     static func == (lhs: Car, rhs: Car) -> Bool {
         return lhs.model == rhs.model && lhs.name == rhs.name
     }
@@ -19,13 +19,13 @@ class Car:Equatable {
     var age: Int?
     var model: String?
     var image: UIImage?
-
     
     init(name:String?, price:Double?, age:Int?, model:String?, imageName:String?) {
-            self.name = name
-            self.price = price
-            self.age = age
-            self.model = model
+        
+        self.name = name
+        self.price = price
+        self.age = age
+        self.model = model
         self.image = UIImage(named: imageName ?? "")
         
     }

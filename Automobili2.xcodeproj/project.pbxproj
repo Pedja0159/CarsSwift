@@ -16,6 +16,7 @@
 		AC27C06D22D3D59A00D7F4EF /* Automobili2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27C06C22D3D59A00D7F4EF /* Automobili2UITests.swift */; };
 		AC27C07F22D3FEB700D7F4EF /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27C07E22D3FEB700D7F4EF /* Car.swift */; };
 		AC27C08122D3FF0B00D7F4EF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27C08022D3FF0B00D7F4EF /* Extension.swift */; };
+		AC355E05238A1C4500C72920 /* EditCarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC355E04238A1C4500C72920 /* EditCarVC.swift */; };
 		ACAF763622EF4B3D00F90D5B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF763522EF4B3D00F90D5B /* DetailViewController.swift */; };
 		ACD2D36A230A148B00BEC248 /* AddCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD2D369230A148B00BEC248 /* AddCarViewController.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +54,7 @@
 		AC27C06E22D3D59A00D7F4EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC27C07E22D3FEB700D7F4EF /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		AC27C08022D3FF0B00D7F4EF /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		AC355E04238A1C4500C72920 /* EditCarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCarVC.swift; sourceTree = "<group>"; };
 		ACAF763522EF4B3D00F90D5B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		ACD2D369230A148B00BEC248 /* AddCarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,11 +107,13 @@
 		AC27C04B22D3D59600D7F4EF /* Automobili2 */ = {
 			isa = PBXGroup;
 			children = (
+				AC97C39F238B974B008DEFE3 /* Model */,
 				AC27C04C22D3D59600D7F4EF /* AppDelegate.swift */,
 				ACD2D369230A148B00BEC248 /* AddCarViewController.swift */,
 				AC27C08022D3FF0B00D7F4EF /* Extension.swift */,
 				AC27C04E22D3D59600D7F4EF /* CarsViewController.swift */,
 				ACAF763522EF4B3D00F90D5B /* DetailViewController.swift */,
+				AC355E04238A1C4500C72920 /* EditCarVC.swift */,
 				AC069B0822D7823F00660F55 /* CarCollectionVIewCell.swift */,
 				AC27C07E22D3FEB700D7F4EF /* Car.swift */,
 				AC27C05322D3D59A00D7F4EF /* Assets.xcassets */,
@@ -135,6 +139,13 @@
 				AC27C06E22D3D59A00D7F4EF /* Info.plist */,
 			);
 			path = Automobili2UITests;
+			sourceTree = "<group>";
+		};
+		AC97C39F238B974B008DEFE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +285,7 @@
 				ACAF763622EF4B3D00F90D5B /* DetailViewController.swift in Sources */,
 				AC27C04F22D3D59600D7F4EF /* CarsViewController.swift in Sources */,
 				AC27C04D22D3D59600D7F4EF /* AppDelegate.swift in Sources */,
+				AC355E05238A1C4500C72920 /* EditCarVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

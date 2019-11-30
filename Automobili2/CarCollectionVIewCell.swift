@@ -16,7 +16,7 @@ class CarCollectionViewCell: UICollectionViewCell {
     @objc fileprivate func deleteButtonTapped() {
         
         if let _car = car {
-            manageCarsDelegate?.didRemoveCar(car: _car)
+            manageCarsDelegate?.didRemoveCar?(car: _car)
           
         }
        
