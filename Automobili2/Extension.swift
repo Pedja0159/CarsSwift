@@ -20,8 +20,7 @@ extension UIView {
         self.layer.shadowRadius = 1.0
         self.layer.masksToBounds = false
         self.layer.cornerRadius = 3
-        
-        }
+    }
         
         func anchor(top: NSLayoutYAxisAnchor?, left: NSLayoutXAxisAnchor?,
                 bottom: NSLayoutYAxisAnchor?, right: NSLayoutXAxisAnchor?,
