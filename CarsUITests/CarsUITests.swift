@@ -1,6 +1,6 @@
 //
-//  Automobili2UITests.swift
-//  Automobili2UITests
+//  CarsUITests.swift
+//  CarsUITests
 //
 //  Created by Pejo on 7/8/19.
 //  Copyright © 2019 pejo015. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class Automobili2UITests: XCTestCase {
+class CarsUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

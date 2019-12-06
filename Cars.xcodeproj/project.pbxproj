@@ -15,10 +15,10 @@
 		AC27C04D22D3D59600D7F4EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27C04C22D3D59600D7F4EF /* AppDelegate.swift */; };
 		AC27C05422D3D59A00D7F4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC27C05322D3D59A00D7F4EF /* Assets.xcassets */; };
 		AC27C05722D3D59A00D7F4EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC27C05522D3D59A00D7F4EF /* LaunchScreen.storyboard */; };
-		AC27C06222D3D59A00D7F4EF /* Automobili2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27C06122D3D59A00D7F4EF /* Automobili2Tests.swift */; };
-		AC27C06D22D3D59A00D7F4EF /* Automobili2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27C06C22D3D59A00D7F4EF /* Automobili2UITests.swift */; };
-		AC27C07F22D3FEB700D7F4EF /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27C07E22D3FEB700D7F4EF /* Car.swift */; };
+		AC27C06222D3D59A00D7F4EF /* CarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27C06122D3D59A00D7F4EF /* CarsTests.swift */; };
+		AC27C06D22D3D59A00D7F4EF /* CarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27C06C22D3D59A00D7F4EF /* CarsUITests.swift */; };
 		AC27C08122D3FF0B00D7F4EF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27C08022D3FF0B00D7F4EF /* Extension.swift */; };
+		AC565B96239A1225005E60F8 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC565B95239A1225005E60F8 /* Car.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,19 +44,19 @@
 		7FCA08B7239A116800156EC2 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7FCA08B8239A116800156EC2 /* AddCarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCarViewController.swift; sourceTree = "<group>"; };
 		AC069B0822D7823F00660F55 /* CarCollectionVIewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCollectionVIewCell.swift; sourceTree = "<group>"; };
-		AC27C04922D3D59600D7F4EF /* Automobili2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Automobili2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC27C04922D3D59600D7F4EF /* Cars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC27C04C22D3D59600D7F4EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC27C05322D3D59A00D7F4EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC27C05622D3D59A00D7F4EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC27C05822D3D59A00D7F4EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC27C05D22D3D59A00D7F4EF /* Automobili2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Automobili2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC27C06122D3D59A00D7F4EF /* Automobili2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automobili2Tests.swift; sourceTree = "<group>"; };
+		AC27C05D22D3D59A00D7F4EF /* CarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC27C06122D3D59A00D7F4EF /* CarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsTests.swift; sourceTree = "<group>"; };
 		AC27C06322D3D59A00D7F4EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC27C06822D3D59A00D7F4EF /* Automobili2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Automobili2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC27C06C22D3D59A00D7F4EF /* Automobili2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automobili2UITests.swift; sourceTree = "<group>"; };
+		AC27C06822D3D59A00D7F4EF /* CarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC27C06C22D3D59A00D7F4EF /* CarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsUITests.swift; sourceTree = "<group>"; };
 		AC27C06E22D3D59A00D7F4EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC27C07E22D3FEB700D7F4EF /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		AC27C08022D3FF0B00D7F4EF /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		AC565B95239A1225005E60F8 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +98,9 @@
 		AC27C04022D3D59600D7F4EF = {
 			isa = PBXGroup;
 			children = (
-				AC27C04B22D3D59600D7F4EF /* Automobili2 */,
-				AC27C06022D3D59A00D7F4EF /* Automobili2Tests */,
-				AC27C06B22D3D59A00D7F4EF /* Automobili2UITests */,
+				AC27C04B22D3D59600D7F4EF /* Cars */,
+				AC27C06022D3D59A00D7F4EF /* CarsTests */,
+				AC27C06B22D3D59A00D7F4EF /* CarsUITests */,
 				AC27C04A22D3D59600D7F4EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,52 +108,60 @@
 		AC27C04A22D3D59600D7F4EF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC27C04922D3D59600D7F4EF /* Automobili2.app */,
-				AC27C05D22D3D59A00D7F4EF /* Automobili2Tests.xctest */,
-				AC27C06822D3D59A00D7F4EF /* Automobili2UITests.xctest */,
+				AC27C04922D3D59600D7F4EF /* Cars.app */,
+				AC27C05D22D3D59A00D7F4EF /* CarsTests.xctest */,
+				AC27C06822D3D59A00D7F4EF /* CarsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AC27C04B22D3D59600D7F4EF /* Automobili2 */ = {
+		AC27C04B22D3D59600D7F4EF /* Cars */ = {
 			isa = PBXGroup;
 			children = (
+				AC565B94239A1225005E60F8 /* Models */,
 				7FCA08B4239A116800156EC2 /* ViewControllers */,
 				AC27C04C22D3D59600D7F4EF /* AppDelegate.swift */,
 				AC27C08022D3FF0B00D7F4EF /* Extension.swift */,
 				AC069B0822D7823F00660F55 /* CarCollectionVIewCell.swift */,
-				AC27C07E22D3FEB700D7F4EF /* Car.swift */,
 				AC27C05322D3D59A00D7F4EF /* Assets.xcassets */,
 				AC27C05522D3D59A00D7F4EF /* LaunchScreen.storyboard */,
 				AC27C05822D3D59A00D7F4EF /* Info.plist */,
 			);
-			path = Automobili2;
+			path = Cars;
 			sourceTree = "<group>";
 		};
-		AC27C06022D3D59A00D7F4EF /* Automobili2Tests */ = {
+		AC27C06022D3D59A00D7F4EF /* CarsTests */ = {
 			isa = PBXGroup;
 			children = (
-				AC27C06122D3D59A00D7F4EF /* Automobili2Tests.swift */,
+				AC27C06122D3D59A00D7F4EF /* CarsTests.swift */,
 				AC27C06322D3D59A00D7F4EF /* Info.plist */,
 			);
-			path = Automobili2Tests;
+			path = CarsTests;
 			sourceTree = "<group>";
 		};
-		AC27C06B22D3D59A00D7F4EF /* Automobili2UITests */ = {
+		AC27C06B22D3D59A00D7F4EF /* CarsUITests */ = {
 			isa = PBXGroup;
 			children = (
-				AC27C06C22D3D59A00D7F4EF /* Automobili2UITests.swift */,
+				AC27C06C22D3D59A00D7F4EF /* CarsUITests.swift */,
 				AC27C06E22D3D59A00D7F4EF /* Info.plist */,
 			);
-			path = Automobili2UITests;
+			path = CarsUITests;
+			sourceTree = "<group>";
+		};
+		AC565B94239A1225005E60F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC565B95239A1225005E60F8 /* Car.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AC27C04822D3D59600D7F4EF /* Automobili2 */ = {
+		AC27C04822D3D59600D7F4EF /* Cars */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC27C07122D3D59A00D7F4EF /* Build configuration list for PBXNativeTarget "Automobili2" */;
+			buildConfigurationList = AC27C07122D3D59A00D7F4EF /* Build configuration list for PBXNativeTarget "Cars" */;
 			buildPhases = (
 				AC27C04522D3D59600D7F4EF /* Sources */,
 				AC27C04622D3D59600D7F4EF /* Frameworks */,
@@ -163,14 +171,14 @@
 			);
 			dependencies = (
 			);
-			name = Automobili2;
+			name = Cars;
 			productName = Automobili2;
-			productReference = AC27C04922D3D59600D7F4EF /* Automobili2.app */;
+			productReference = AC27C04922D3D59600D7F4EF /* Cars.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AC27C05C22D3D59A00D7F4EF /* Automobili2Tests */ = {
+		AC27C05C22D3D59A00D7F4EF /* CarsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC27C07422D3D59A00D7F4EF /* Build configuration list for PBXNativeTarget "Automobili2Tests" */;
+			buildConfigurationList = AC27C07422D3D59A00D7F4EF /* Build configuration list for PBXNativeTarget "CarsTests" */;
 			buildPhases = (
 				AC27C05922D3D59A00D7F4EF /* Sources */,
 				AC27C05A22D3D59A00D7F4EF /* Frameworks */,
@@ -181,14 +189,14 @@
 			dependencies = (
 				AC27C05F22D3D59A00D7F4EF /* PBXTargetDependency */,
 			);
-			name = Automobili2Tests;
+			name = CarsTests;
 			productName = Automobili2Tests;
-			productReference = AC27C05D22D3D59A00D7F4EF /* Automobili2Tests.xctest */;
+			productReference = AC27C05D22D3D59A00D7F4EF /* CarsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AC27C06722D3D59A00D7F4EF /* Automobili2UITests */ = {
+		AC27C06722D3D59A00D7F4EF /* CarsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC27C07722D3D59A00D7F4EF /* Build configuration list for PBXNativeTarget "Automobili2UITests" */;
+			buildConfigurationList = AC27C07722D3D59A00D7F4EF /* Build configuration list for PBXNativeTarget "CarsUITests" */;
 			buildPhases = (
 				AC27C06422D3D59A00D7F4EF /* Sources */,
 				AC27C06522D3D59A00D7F4EF /* Frameworks */,
@@ -199,9 +207,9 @@
 			dependencies = (
 				AC27C06A22D3D59A00D7F4EF /* PBXTargetDependency */,
 			);
-			name = Automobili2UITests;
+			name = CarsUITests;
 			productName = Automobili2UITests;
-			productReference = AC27C06822D3D59A00D7F4EF /* Automobili2UITests.xctest */;
+			productReference = AC27C06822D3D59A00D7F4EF /* CarsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -227,7 +235,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AC27C04422D3D59600D7F4EF /* Build configuration list for PBXProject "Automobili2" */;
+			buildConfigurationList = AC27C04422D3D59600D7F4EF /* Build configuration list for PBXProject "Cars" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -240,9 +248,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC27C04822D3D59600D7F4EF /* Automobili2 */,
-				AC27C05C22D3D59A00D7F4EF /* Automobili2Tests */,
-				AC27C06722D3D59A00D7F4EF /* Automobili2UITests */,
+				AC27C04822D3D59600D7F4EF /* Cars */,
+				AC27C05C22D3D59A00D7F4EF /* CarsTests */,
+				AC27C06722D3D59A00D7F4EF /* CarsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -280,9 +288,9 @@
 			files = (
 				AC069B0922D7823F00660F55 /* CarCollectionVIewCell.swift in Sources */,
 				AC27C08122D3FF0B00D7F4EF /* Extension.swift in Sources */,
-				AC27C07F22D3FEB700D7F4EF /* Car.swift in Sources */,
 				7FCA08BC239A116800156EC2 /* AddCarViewController.swift in Sources */,
 				7FCA08B9239A116800156EC2 /* EditCarVC.swift in Sources */,
+				AC565B96239A1225005E60F8 /* Car.swift in Sources */,
 				AC27C04D22D3D59600D7F4EF /* AppDelegate.swift in Sources */,
 				7FCA08BA239A116800156EC2 /* CarsViewController.swift in Sources */,
 				7FCA08BB239A116800156EC2 /* DetailViewController.swift in Sources */,
@@ -293,7 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC27C06222D3D59A00D7F4EF /* Automobili2Tests.swift in Sources */,
+				AC27C06222D3D59A00D7F4EF /* CarsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC27C06D22D3D59A00D7F4EF /* Automobili2UITests.swift in Sources */,
+				AC27C06D22D3D59A00D7F4EF /* CarsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,12 +318,12 @@
 /* Begin PBXTargetDependency section */
 		AC27C05F22D3D59A00D7F4EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AC27C04822D3D59600D7F4EF /* Automobili2 */;
+			target = AC27C04822D3D59600D7F4EF /* Cars */;
 			targetProxy = AC27C05E22D3D59A00D7F4EF /* PBXContainerItemProxy */;
 		};
 		AC27C06A22D3D59A00D7F4EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AC27C04822D3D59600D7F4EF /* Automobili2 */;
+			target = AC27C04822D3D59600D7F4EF /* Cars */;
 			targetProxy = AC27C06922D3D59A00D7F4EF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -454,13 +462,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9W7C5DZ9SL;
-				INFOPLIST_FILE = Automobili2/Info.plist;
+				INFOPLIST_FILE = Cars/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com..Automobili2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com..Cars;
+				PRODUCT_NAME = Cars;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -472,13 +480,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9W7C5DZ9SL;
-				INFOPLIST_FILE = Automobili2/Info.plist;
+				INFOPLIST_FILE = Cars/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com..Automobili2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com..Cars;
+				PRODUCT_NAME = Cars;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -490,17 +498,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Automobili2Tests/Info.plist;
+				INFOPLIST_FILE = CarsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com..Automobili2Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com..CarsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Automobili2.app/Automobili2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cars.app/Cars";
 			};
 			name = Debug;
 		};
@@ -510,17 +518,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Automobili2Tests/Info.plist;
+				INFOPLIST_FILE = CarsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com..Automobili2Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com..CarsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Automobili2.app/Automobili2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cars.app/Cars";
 			};
 			name = Release;
 		};
@@ -529,17 +537,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Automobili2UITests/Info.plist;
+				INFOPLIST_FILE = CarsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com..Automobili2UITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com..CarsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Automobili2;
+				TEST_TARGET_NAME = Cars;
 			};
 			name = Debug;
 		};
@@ -548,24 +556,24 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Automobili2UITests/Info.plist;
+				INFOPLIST_FILE = CarsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com..Automobili2UITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com..CarsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Automobili2;
+				TEST_TARGET_NAME = Cars;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AC27C04422D3D59600D7F4EF /* Build configuration list for PBXProject "Automobili2" */ = {
+		AC27C04422D3D59600D7F4EF /* Build configuration list for PBXProject "Cars" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC27C06F22D3D59A00D7F4EF /* Debug */,
@@ -574,7 +582,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC27C07122D3D59A00D7F4EF /* Build configuration list for PBXNativeTarget "Automobili2" */ = {
+		AC27C07122D3D59A00D7F4EF /* Build configuration list for PBXNativeTarget "Cars" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC27C07222D3D59A00D7F4EF /* Debug */,
@@ -583,7 +591,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC27C07422D3D59A00D7F4EF /* Build configuration list for PBXNativeTarget "Automobili2Tests" */ = {
+		AC27C07422D3D59A00D7F4EF /* Build configuration list for PBXNativeTarget "CarsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC27C07522D3D59A00D7F4EF /* Debug */,
@@ -592,7 +600,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC27C07722D3D59A00D7F4EF /* Build configuration list for PBXNativeTarget "Automobili2UITests" */ = {
+		AC27C07722D3D59A00D7F4EF /* Build configuration list for PBXNativeTarget "CarsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC27C07822D3D59A00D7F4EF /* Debug */,

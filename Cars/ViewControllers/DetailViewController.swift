@@ -1,6 +1,6 @@
 //
 //  DetailViewController.swift
-//  Automobili2
+//  Cars
 //
 //  Created by Pejo on 7/29/19.
 //  Copyright © 2019 pejo015. All rights reserved.

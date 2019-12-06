@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AC27C04822D3D59600D7F4EF"
-               BuildableName = "Automobili2.app"
-               BlueprintName = "Automobili2"
-               ReferencedContainer = "container:Automobili2.xcodeproj">
+               BuildableName = "Cars.app"
+               BlueprintName = "Cars"
+               ReferencedContainer = "container:Cars.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -27,15 +27,24 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AC27C04822D3D59600D7F4EF"
+            BuildableName = "Cars.app"
+            BlueprintName = "Cars"
+            ReferencedContainer = "container:Cars.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AC27C05C22D3D59A00D7F4EF"
-               BuildableName = "Automobili2Tests.xctest"
-               BlueprintName = "Automobili2Tests"
-               ReferencedContainer = "container:Automobili2.xcodeproj">
+               BuildableName = "CarsTests.xctest"
+               BlueprintName = "CarsTests"
+               ReferencedContainer = "container:Cars.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,23 +52,12 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AC27C06722D3D59A00D7F4EF"
-               BuildableName = "Automobili2UITests.xctest"
-               BlueprintName = "Automobili2UITests"
-               ReferencedContainer = "container:Automobili2.xcodeproj">
+               BuildableName = "CarsUITests.xctest"
+               BlueprintName = "CarsUITests"
+               ReferencedContainer = "container:Cars.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AC27C04822D3D59600D7F4EF"
-            BuildableName = "Automobili2.app"
-            BlueprintName = "Automobili2"
-            ReferencedContainer = "container:Automobili2.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -76,13 +74,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AC27C04822D3D59600D7F4EF"
-            BuildableName = "Automobili2.app"
-            BlueprintName = "Automobili2"
-            ReferencedContainer = "container:Automobili2.xcodeproj">
+            BuildableName = "Cars.app"
+            BlueprintName = "Cars"
+            ReferencedContainer = "container:Cars.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -95,9 +91,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AC27C04822D3D59600D7F4EF"
-            BuildableName = "Automobili2.app"
-            BlueprintName = "Automobili2"
-            ReferencedContainer = "container:Automobili2.xcodeproj">
+            BuildableName = "Cars.app"
+            BlueprintName = "Cars"
+            ReferencedContainer = "container:Cars.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
@@ -106,6 +102,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "Cars"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

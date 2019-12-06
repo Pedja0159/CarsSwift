@@ -1,31 +1,25 @@
 //
-//  AddCarViewController.swift
-//  Automobili2
+//  EditCarVC.swift
+//  Cars
 //
-//  Created by Pejo on 8/19/19.
+//  Created by Pejo on 24/11/2019.
 //  Copyright © 2019 pejo015. All rights reserved.
 //
 
 import UIKit
 
 
-@objc protocol ManageCarsDelegate: class {
-    
-    @objc optional func didAddCar(car:Car)
-    @objc optional func didEditCar(car:Car)
-    @objc optional func didRemoveCar(car:Car)
-    
-    
-    
-}
 
-class AddCarViewController: UIViewController {
+
+
+class EditCarViewController: UIViewController {
     
     var newCar: Car?
     
     let profileImageViewWidth: CGFloat = 100
     
     weak var manageCarsDelegate: ManageCarsDelegate?
+    
     
     func upadateButtonState () {
         
@@ -45,6 +39,7 @@ class AddCarViewController: UIViewController {
         }
         
     }
+    
     
     
     
@@ -187,14 +182,26 @@ class AddCarViewController: UIViewController {
         upadateButtonState()
     }
     
+    private func setupFields() {
+        
+        profileImageView.image = newCar?.image
+        nameTextField.text = newCar?.name
+        modelTextField.text = newCar?.model
+        if let _age = newCar?.age {
+            ageTextField.text = String(_age)
+        }
+        
+        if let _price = newCar?.price {
+            priceTextField.text = String(_price)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         upadateButtonState ()
-        newCar = Car (name: nil, price: nil, age: nil, model: nil, imageName: nil)
+        setupFields()
         
         self.view.backgroundColor = UIColor.customLightBlueColor
-        
         
         
         
@@ -286,7 +293,7 @@ class AddCarViewController: UIViewController {
     @objc func didTapSave(sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
         if let _newCar = newCar {
-            manageCarsDelegate?.didAddCar?(car: _newCar )
+            manageCarsDelegate?.didEditCar?(car: _newCar )
         }
         
     }
@@ -299,8 +306,7 @@ class AddCarViewController: UIViewController {
     
     
 }
-
-extension AddCarViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension EditCarViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func showImagePickerControllerActionSheet() {
         
