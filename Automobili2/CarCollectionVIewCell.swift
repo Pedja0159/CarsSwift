@@ -17,9 +17,9 @@ class CarCollectionViewCell: UICollectionViewCell {
         
         if let _car = car {
             manageCarsDelegate?.didRemoveCar?(car: _car)
-          
+            
         }
-       
+        
     }
     
     

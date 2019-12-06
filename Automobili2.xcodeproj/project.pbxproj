@@ -9,16 +9,13 @@
 /* Begin PBXBuildFile section */
 		AC069B0922D7823F00660F55 /* CarCollectionVIewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC069B0822D7823F00660F55 /* CarCollectionVIewCell.swift */; };
 		AC27C04D22D3D59600D7F4EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27C04C22D3D59600D7F4EF /* AppDelegate.swift */; };
-		AC27C04F22D3D59600D7F4EF /* CarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27C04E22D3D59600D7F4EF /* CarsViewController.swift */; };
 		AC27C05422D3D59A00D7F4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC27C05322D3D59A00D7F4EF /* Assets.xcassets */; };
 		AC27C05722D3D59A00D7F4EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC27C05522D3D59A00D7F4EF /* LaunchScreen.storyboard */; };
 		AC27C06222D3D59A00D7F4EF /* Automobili2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27C06122D3D59A00D7F4EF /* Automobili2Tests.swift */; };
 		AC27C06D22D3D59A00D7F4EF /* Automobili2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27C06C22D3D59A00D7F4EF /* Automobili2UITests.swift */; };
 		AC27C07F22D3FEB700D7F4EF /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27C07E22D3FEB700D7F4EF /* Car.swift */; };
 		AC27C08122D3FF0B00D7F4EF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27C08022D3FF0B00D7F4EF /* Extension.swift */; };
-		AC355E05238A1C4500C72920 /* EditCarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC355E04238A1C4500C72920 /* EditCarVC.swift */; };
-		ACAF763622EF4B3D00F90D5B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF763522EF4B3D00F90D5B /* DetailViewController.swift */; };
-		ACD2D36A230A148B00BEC248 /* AddCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD2D369230A148B00BEC248 /* AddCarViewController.swift */; };
+		AC565B92239A0E89005E60F8 /* ViewControllers in Resources */ = {isa = PBXBuildFile; fileRef = AC565B91239A0E88005E60F8 /* ViewControllers */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +39,6 @@
 		AC069B0822D7823F00660F55 /* CarCollectionVIewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCollectionVIewCell.swift; sourceTree = "<group>"; };
 		AC27C04922D3D59600D7F4EF /* Automobili2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Automobili2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC27C04C22D3D59600D7F4EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC27C04E22D3D59600D7F4EF /* CarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsViewController.swift; sourceTree = "<group>"; };
 		AC27C05322D3D59A00D7F4EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC27C05622D3D59A00D7F4EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC27C05822D3D59A00D7F4EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,9 +50,7 @@
 		AC27C06E22D3D59A00D7F4EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC27C07E22D3FEB700D7F4EF /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		AC27C08022D3FF0B00D7F4EF /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		AC355E04238A1C4500C72920 /* EditCarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCarVC.swift; sourceTree = "<group>"; };
-		ACAF763522EF4B3D00F90D5B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		ACD2D369230A148B00BEC248 /* AddCarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCarViewController.swift; sourceTree = "<group>"; };
+		AC565B91239A0E88005E60F8 /* ViewControllers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ViewControllers; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,13 +101,9 @@
 		AC27C04B22D3D59600D7F4EF /* Automobili2 */ = {
 			isa = PBXGroup;
 			children = (
-				AC97C39F238B974B008DEFE3 /* Model */,
+				AC565B91239A0E88005E60F8 /* ViewControllers */,
 				AC27C04C22D3D59600D7F4EF /* AppDelegate.swift */,
-				ACD2D369230A148B00BEC248 /* AddCarViewController.swift */,
 				AC27C08022D3FF0B00D7F4EF /* Extension.swift */,
-				AC27C04E22D3D59600D7F4EF /* CarsViewController.swift */,
-				ACAF763522EF4B3D00F90D5B /* DetailViewController.swift */,
-				AC355E04238A1C4500C72920 /* EditCarVC.swift */,
 				AC069B0822D7823F00660F55 /* CarCollectionVIewCell.swift */,
 				AC27C07E22D3FEB700D7F4EF /* Car.swift */,
 				AC27C05322D3D59A00D7F4EF /* Assets.xcassets */,
@@ -139,13 +129,6 @@
 				AC27C06E22D3D59A00D7F4EF /* Info.plist */,
 			);
 			path = Automobili2UITests;
-			sourceTree = "<group>";
-		};
-		AC97C39F238B974B008DEFE3 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +237,7 @@
 			files = (
 				AC27C05722D3D59A00D7F4EF /* LaunchScreen.storyboard in Resources */,
 				AC27C05422D3D59A00D7F4EF /* Assets.xcassets in Resources */,
+				AC565B92239A0E89005E60F8 /* ViewControllers in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,14 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACD2D36A230A148B00BEC248 /* AddCarViewController.swift in Sources */,
 				AC069B0922D7823F00660F55 /* CarCollectionVIewCell.swift in Sources */,
 				AC27C08122D3FF0B00D7F4EF /* Extension.swift in Sources */,
 				AC27C07F22D3FEB700D7F4EF /* Car.swift in Sources */,
-				ACAF763622EF4B3D00F90D5B /* DetailViewController.swift in Sources */,
-				AC27C04F22D3D59600D7F4EF /* CarsViewController.swift in Sources */,
 				AC27C04D22D3D59600D7F4EF /* AppDelegate.swift in Sources */,
-				AC355E05238A1C4500C72920 /* EditCarVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

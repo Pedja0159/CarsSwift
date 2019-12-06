@@ -32,8 +32,6 @@ class CarsViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
     
     
     
-    
-    
     func didAddCar(car: Car) {
         cars.append(car)
         collectionView.reloadData()

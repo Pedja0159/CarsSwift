@@ -188,8 +188,8 @@ class EditCarViewController: UIViewController {
         nameTextField.text = newCar?.name
         modelTextField.text = newCar?.model
         if let _age = newCar?.age {
-                   ageTextField.text = String(_age)
-               }
+            ageTextField.text = String(_age)
+        }
         
         if let _price = newCar?.price {
             priceTextField.text = String(_price)

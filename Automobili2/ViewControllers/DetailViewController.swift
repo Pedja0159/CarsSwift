@@ -155,15 +155,15 @@ class DetailViewController: UIViewController,ManageCarsDelegate {
         NSLayoutConstraint.activate([carModelLabelTop,carModelLabelLeft,carModelLabelright])
         mainStackView.addArrangedSubview(carModelLabel)
         
-
-               mainStackView.addArrangedSubview(carAgeLabel)
-               mainStackView.addArrangedSubview(carPriceLabel)
         
-//        let carAgeLabelTop = mainStackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 400)
-//        let carAgeLabelLeft = mainStackView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 100)
-//        let carAgeLabelright = mainStackView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 100)
-//        NSLayoutConstraint.activate([carAgeLabelTop,carAgeLabelLeft,carAgeLabelright])
-//        mainStackView.addArrangedSubview(carAgeLabel)
+        mainStackView.addArrangedSubview(carAgeLabel)
+        mainStackView.addArrangedSubview(carPriceLabel)
+        
+        //        let carAgeLabelTop = mainStackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 400)
+        //        let carAgeLabelLeft = mainStackView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 100)
+        //        let carAgeLabelright = mainStackView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 100)
+        //        NSLayoutConstraint.activate([carAgeLabelTop,carAgeLabelLeft,carAgeLabelright])
+        //        mainStackView.addArrangedSubview(carAgeLabel)
         
     }
     
